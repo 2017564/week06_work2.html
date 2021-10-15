@@ -7,7 +7,7 @@
     <title>Heejung's self-introduction webpage</title>
     <link rel="stylesheet" href="http://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <style>
         body {width: 980px; margin: auto; text-align: center; }
@@ -83,9 +83,9 @@
     <article class="media w3-large w3-text-indigo w3-margin-tops"></article><h2 id="좋아하는 사진"> favorite photo<br>
         <div class="photo" >
             <div class="w3-row">
-                <img src="./images01/photo1.jpg" alt="" width="20%">
-                <img src="./images01/photo2.jpg" alt="" width="20%">
-                <img src="./images01/photo3jpg.jpg" alt="" width="20%">
+              <img class="w3-col s3 w3-border w3-margin"  src="./images01/photo1.jpg" alt="사진1" />
+              <img class="w3-col s3 w3-border w3-margin" src="./images01/photo2.jpg" alt="사진2" />
+              <img class="w3-col s3 w3-border w3-margin" src="./images01/photo3jpg.jpg" alt="사진3" />
             </div>
         </div>
     <article class="media w3-large w3-text-indigo w3-margin-tops"></article><h2 id="좋아하는 동영상"> favorite media <br>
@@ -96,34 +96,35 @@
         </div>
     </article>
 </section>
-
-<aside class="right">
-    <div class="login"> <br>
-        <h3 >Log In</h3> 
-            <form action="#" class="w3-padding-large " > 
-                    아이디 :<input type="text" name="id"/> <br/> <br>
-                    패스워드:<input type="password" name="pass"/> <br /><br />
-                <input type="submit" value="로그인" /> &nbsp;
-                <input type="reset" value="초기화" /><br /> <br>
-                <a href="register.html" target="_blank" id="register">회원가입</a>
-                <a href="#" id="forgot">비밀번호분실</a>
-            </form>
-     </div> <br>
+<aside class="right" class="w3-container w3-cell">
+    <div class="login"  >
+               <h4 class="w3-text-indigo">Log In</h4>
+               <form action="#" >
+                                   아이디  :<input class="w3-input1" type="text" name="id"/> <br />
+                                  패스워드:<input class="w3-input1" type="password" name="pass"/> <br /><br />
+                   <input class="w3-btn w3-teal" type="submit" value="로그인" />
+                   <input class="w3-btn w3-teal" type="reset" value="초기화" /><br />
+                   <a href="register.jsp" target="_blank" id="register">회원가입</a>
+                   <a href="#" id="forgot">비밀번호분실</a>
+               </form>
+           </div>
      <div id="aside-list-2" >
     <h4 class="w3-text-indigo ">나의 블로그 글</h4>
         <ul class="text-left">
-            <li class="w3-bar-item w3-button w3-padding-small"><a href="https://blog.naver.com/acb4287/222405878480">블로그, 2월부터 6월까지</a></li> <br>
-            <li class="w3-bar-item w3-button w3-padding-small"><a href="https://blog.naver.com/acb4287/222247812256">블로그, [노래] Let Me Down Slow, New Hope Club </a></li> <br>
-            <li class="w3-bar-item w3-button w3-padding-small "><a href="https://blog.naver.com/acb4287/222207586752">블로그, [노래] everything, 10cm</a></li> <br>
+            <li class="w3-bar-item w3-button w3-padding-small"><a href="https://blog.naver.com/acb4287/222405878480">블로그, 2월부터 6월까지</a></li>
+            <li class="w3-bar-item w3-button w3-padding-small"><a href="https://blog.naver.com/acb4287/222247812256">블로그, [노래] Let Me Down Slow, New Hope Club </a></li>
+            <li class="w3-bar-item w3-button w3-padding-small "><a href="https://blog.naver.com/acb4287/222207586752">블로그, [노래] everything, 10cm</a></li>
         </ul>
  </aside>
 </div>  
 <footer>
     <div class="w3-row">
         <div class="w3-col s4  w3-container" >
-            <h5> Contact Us</h5>
             <ul>
+                <h5> Contact Us</h5>
               <li>Phone: 010 4030 ****</li> <br>
+              
+              <i class="glyphicon glyphicon-envelope"></i>
             </ul>
         </div>  
         <div class="w3-col s4  w3-container" >
@@ -134,7 +135,8 @@
 		</div>
 		<div class="w3-col s4 w3-container" >
 			<h5> About Us</h5>
-			<a href="#" class="btn btn-block btn-base btn-icon fa-check" ><span>Try it now</span></a>
+			  <a href="#" class="btn btn-block btn-base btn-icon fa-check" ><span>Try it now</span></a>
+			
 		</div>
     </div>
 </footer>
